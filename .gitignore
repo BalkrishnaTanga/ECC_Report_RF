@@ -1,0 +1,7 @@
+*.html
+*.png
+*.xml
+
+output/allure
+allure-report
+__pycache__
