@@ -25,7 +25,7 @@ MIS Report Open Status
     Wait For Download To Start     ${initial_file_count}
     Wait For Download To Complete
     Log To Console    File download completed successfully
-
+#smoke test case
  MIS Report ReOpen Status
     [Tags]    smoke
     ${initial_file_count}=    Get File Count In Download Folder
