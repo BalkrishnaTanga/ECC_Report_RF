@@ -3,7 +3,7 @@ Library           SeleniumLibrary
 Resource          ../Resources/resource.robot
 
 *** Variables ***
-${DOWNLOAD_DIR}    C:\\Users\\balkrishna.yadav\\Downloads
+# ${DOWNLOAD_DIR}    C:\\Users\\balkrishna.yadav\\Downloads
 ${username_input}    //input[@name="LoginId"]
 ${password_input}    //input[@name="Password"]
 ${login_button}    //input[@value='Log in']

@@ -1,6 +1,7 @@
 *.html
 *.png
 *.xml
+*.csv
 
 output/allure
 allure-report
