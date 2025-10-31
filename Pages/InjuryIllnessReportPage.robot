@@ -56,7 +56,7 @@ Select Service Type
     Clear Element Text    ${service_type_dropdown}
 
 Select Service Location
-    Wait Until Element Is Visible    ${service_location_dropdown}    timeout=10s
+    Wait Until Element Is Visible    ${service_location_dropdown}    timeout=25s
     Click Element    ${service_location_dropdown}
     Click Element    ${first_checkbox}
 

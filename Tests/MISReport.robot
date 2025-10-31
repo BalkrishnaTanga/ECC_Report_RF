@@ -12,7 +12,7 @@ Test Teardown    Close Browser
 
 
 *** Test Cases ***
-MIS Report Open Status
+MIS Report Open Status Export to CSV
     [Tags]    smoke
     ${initial_file_count}=    Get File Count In Download Folder
     Select Report Menu in Sidebar
@@ -26,7 +26,7 @@ MIS Report Open Status
     Wait For Download To Complete
     Log To Console    File download completed successfully
 
- MIS Report ReOpen Status
+ MIS Report ReOpen Status Export to CSV
     [Tags]    smoke
     ${initial_file_count}=    Get File Count In Download Folder
     Select Report Menu in Sidebar

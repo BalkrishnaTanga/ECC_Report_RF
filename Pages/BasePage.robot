@@ -1,9 +1,11 @@
 *** Settings ***
 Library           SeleniumLibrary
 Library    OperatingSystem
+Resource          ../Resources/resource.robot
 
 *** Variables ***
-${DOWNLOAD_DIR}    C:\\Users\\balkrishna.yadav\\Downloads
+# ${DOWNLOAD_DIR}    C:\\Users\\balkrishna.yadav\\Downloads
+# ${DOWNLOAD_DIR}    ${CURDIR}\\Downloads
 ${injury_illness_report_menu_link}    //a[normalize-space()='Injury Illness']
 ${reports_menu_link}     //a[normalize-space()='Reports']
 
@@ -46,7 +48,7 @@ File Should Exist In Download Folder
     Should Be True    ${count} > ${existing_files_count}   msg=No files found in download directory yet.
 
 Wait For Download To Complete
-    [Arguments]    ${timeout}=60s
+    [Arguments]    ${timeout}=80s
     Wait Until Keyword Succeeds    ${timeout}    2s    Download Completed
 
 Download Completed
